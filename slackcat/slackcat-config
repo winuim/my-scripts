@@ -1,0 +1,5 @@
+default_team = "team_name"
+default_channel = "mbp-log"
+
+[teams]
+  team_name = ""

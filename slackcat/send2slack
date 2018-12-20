@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -eu
+echo \[$(whoami)@$(hostname -s):$([ $HOME = $PWD ] && echo "~" || echo $PWD)\] $* | slackcat -s -t
+$* | slackcat -s -t
+
