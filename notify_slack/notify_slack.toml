@@ -1,0 +1,7 @@
+[slack]
+url = ""
+token = ""
+channel = "#mbp-log"
+username = "notify_slack"
+icon_emoji = ":footprints:"
+interval = "1s"

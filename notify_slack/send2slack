@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -eu
+echo \[$(whoami)@$(hostname -s):$([ $HOME = $PWD ] && echo "~" || echo $PWD)\] $* | notify_slack
+$* | notify_slack 
+
