@@ -1,6 +1,6 @@
-#!/bin/sh -eu
+#!/bin/bash -eu
 
-[[ -v DEBUG ]] && ${DEBUG} && set -x
+[[ ! -z "${DEBUG}" ]] && ${DEBUG} && set -x
 
 FILE_LIST=$(find $1 -type f -not -name '.DS_Store')
 DELETE_PATH=${1%/*}
